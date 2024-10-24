@@ -37,13 +37,7 @@ pip install numpy pandas matplotlib
 
 3. **运行代码**：
 
-   在终端中运行：
-
-   ```bash
-   python Future_pair_trading_max.md
-   ```
-
-   或在 Jupyter Notebook 中逐段执行代码。
+   在 Jupyter Notebook 中逐段执行代码。
 
 
 ## 贡献
