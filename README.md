@@ -45,30 +45,6 @@ pip install numpy pandas matplotlib
 
    或在 Jupyter Notebook 中逐段执行代码。
 
-4. **查看结果**：分析结果会以图表形式显示。
-
-## 示例代码片段
-
-```python
-import os
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# 加载数据
-data_folder = 'data'
-futures_list = ["A.DCE", "AG.SHF", "AL.SHF", "AP.CZC", "AU.SHF"]
-data = pd.DataFrame()  # 初始化数据框架
-
-for future in futures_list:
-    file_path = os.path.join(data_folder, f'{future}.csv')
-    temp_data = pd.read_csv(file_path)
-    data = pd.concat([data, temp_data], axis=0)
-
-# 数据可视化示例
-data.plot(x='date', y='price')
-plt.show()
-```
 
 ## 贡献
 
